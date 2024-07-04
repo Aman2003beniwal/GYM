@@ -115,7 +115,7 @@
 
 .desc {
     background-color: yellow;
-    height: 300px;
+    height: 350px;
     width: 40%;
     margin-top: 10px;
     padding: 25px;
@@ -127,7 +127,7 @@
 
 .member {
     background-color: #343a40;
-    height: 300px;
+    height: 350px;
     width: 40%;
     margin: 10px;
     padding: 25px;
@@ -138,6 +138,8 @@
 .member h2 {
     font-size: 30px;
     color: burlywood;
+    margin: 5px;
+    padding: 10px;
 }
 
 input[type=text],
@@ -149,14 +151,19 @@ input[type=number] {
     border: none;
     background: #f1f1f1;
 }
+ .form-class label{
+    font-size: 25px;
+}
+
 
 .right {
     margin-top: 15px;
     font-size: 20px;
     background-color: red;
     color: white;
-    border-radius: 7px;
+    border-radius: 10px;
     cursor: pointer;
+    padding: 5px;
 }
 
 footer {
@@ -244,14 +251,65 @@ footer p {
 
     #contact h3 {
         margin: 8px;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     #contact p {
-        font-size: 17px;
+        font-size: 25px;
         margin: 7px;
     }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .desc {
+        width: 85%;
+        margin: 20px;
+        padding: 30px;
+        font-size: 24px;
+    }
+    .desc h3,h5{
+        font-size: 30px;
+    }
+
+    .member {
+        width: 85%;
+        margin: 20px;
+        padding: 30px;
+        color: white;
+        padding: 30px;
+        height: 600px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+        padding: 20px;
+        margin: 10px;
+        font-size: 24px;
+    }
+    .form-class label{
+        font-size: 35px;
+        margin: 10px;
+    }
+    .member h2{
+        font-size: 35px;
+        margin: 10px;
+    }
+
+    .right{
+        font-size: 30px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+
 }
+
 @media (max-width:477px) {
     #main {
         height: 100px;
@@ -263,49 +321,82 @@ footer p {
 
     #contact h3 {
         margin: 8px;
-        font-size: 15px;
+        font-size: 20px;
     }
 
     #contact p {
-        font-size: 13px;
-        margin:0;
-    }
-
-    .member h2 {
         font-size: 20px;
-    }
-    .desc h3{
-     font-size: 20px;
+        margin: 0;
     }
 
-    .desc h5 {
-        margin-top: 0px;
+    .member {
+        margin: 0px;
+        padding: 20px;
+        padding: 30px;
+        height: 400px;
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+        padding:10px;
+        margin: 5px;
         font-size: 15px;
     }
 
-   .form-class{
-    font-size: 20px;
-   }
+    .member h2 {
+        font-size: 25px;
+    }
 
-   .right{
-    font-size: 18px;
-   }
+    .desc{
+        height: 300px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .desc h3 {
+        font-size: 25px;
+    }
 
-   .follow h4{
-  font-size: 20px;
-  margin: 10px;
-  margin-bottom: 0;
-   }
+    .desc h5 {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .form-class label{
+        font-size: 25px;
+        margin: 7px;
+    }
+    .member h2{
+        font-size: 25px;
+        margin: 7px;
+    }
 
-   .icons i{
-    margin-top: 0;
-    font-size: 25px;
-   }
+    .right{
+        font-size: 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
 
-   footer p {
-    margin: 10px;
-}
+    .form-class {
+        font-size: 20px;
+    }
 
-    
-    
+    .right {
+        font-size: 18px;
+    }
+
+    .follow h4 {
+        font-size: 20px;
+        margin: 10px;
+        margin-bottom: 0;
+    }
+
+    .icons i {
+        margin-top: 0;
+        font-size: 25px;
+    }
+
+    footer p {
+        margin: 10px;
+    }
+
 }
