@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+#header a img {
+    height: 90px;
+    width: 90px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4afaf;
+    padding: 10px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    /* it is used for adding a smoothness*/
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(94, 108, 187);
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    background: rgb(139, 151, 223);
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+
+
+
+#Welcome {
+    text-align: center;
+    margin: 15px;
+    padding: 20px 0px;
+}
+
+#Welcome h2 {
+    color: #fd3c3d;
+    font-size: 35px;
+    padding: 15px;
+}
+
+#Welcome p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row p {
+    margin: 20px;
+    width: 60%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.row img {
+    margin: 5px;
+    padding: 5px 20px;
+    height: auto;
+    width: 600px;
+}
+
+.row h3 {
+    padding-left: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+}
+
+.follow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer .icons {
+    color: #fd3c3d;
+    font-size: 40px;
+}
+
+footer h4 {
+    margin: 20px;
+    font-size: 30px;
+    color: #fd3c3d;
+}
+
+footer p {
+    margin: 20px;
+    color: white;
+}
+
+
+@media (max-width:799px) {
+     .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top:0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: #b1a1a1;
+        box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0px 0px 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        margin-bottom: 10px;
+    }
+
+     #mobile {
+        display: flex;
+    }
+
+    #mobile i {
+        color: black;
+        font-size: 15px;
+    }
+
+    #close {
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        color: #222;
+        font-size: 24px;
+    } 
+
+
+    #Welcome {
+        text-align: center;
+        margin: 10px;
+        padding: 10px 0px;
+    }
+
+
+    #Welcome h2 {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+    #Welcome p {
+        font-size:12px;
+    }
+
+    .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row p {
+        text-align: left;
+        margin-left: 150px;
+        padding: 10px;
+        font-size: 20px;
+        
+    }  
+    .row img {
+        width: 400px;
+    } 
+}
+
+@media (max-width:477px) {
+    .row img {
+        padding: 5px 10px;
+        width: 300px;
+    }
+    
+    .row h3 {
+        padding-left: 10px;
+    }
+
+    .row p {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    footer h4 {
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    footer p {
+        margin: 15px;    
+    }
+    footer .icons {
+        font-size: 30px;
+    }
+}

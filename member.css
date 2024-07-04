@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+#header a img {
+    height: 90px;
+    width: 90px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4afaf;
+    padding: 10px 80px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    transition: 0.3s ease;
+    /* it is used for adding a smoothness*/
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    /*#navbar li a.active it is used because to adding konwing the active page */
+    color: rgb(94, 108, 187);
+}
+
+/*it is used to construct the underline in a navbar item when we hover it*/
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    background: rgb(139, 151, 223);
+    bottom: -4px;
+    left: 20px;
+}
+
+#mobile {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#main {
+    background-image: url(./picture/welcome.webp);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact {
+    text-align: center;
+    margin-top: 25px;
+}
+
+#contact h3 {
+    margin: 10px;
+    font-size: 30px;
+    color: red;
+}
+
+#contact p {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+
+.desc {
+    background-color: yellow;
+    height: 300px;
+    width: 40%;
+    margin-top: 10px;
+    padding: 25px;
+}
+
+.desc h5 {
+    margin-top: 20px;
+}
+
+.member {
+    background-color: #343a40;
+    height: 300px;
+    width: 40%;
+    margin: 10px;
+    padding: 25px;
+    margin-left: 0;
+    color: white;
+}
+
+.member h2 {
+    font-size: 30px;
+    color: burlywood;
+}
+
+input[type=text],
+input[type=email],
+input[type=number] {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.right {
+    margin-top: 15px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: black;
+}
+
+.follow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+footer .icons {
+    color: #fd3c3d;
+    font-size: 40px;
+}
+
+footer h4 {
+    margin: 20px;
+    font-size: 30px;
+    color: #fd3c3d;
+}
+
+footer p {
+    margin: 20px;
+    color: white;
+}
+
+@media (max-width:799px) {
+    .section-p1 {
+        padding: 40px 40px;
+    }
+
+    #navbar {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 200px;
+        background-color: #b1a1a1;
+        border-radius: 0 40px 60px rgba(0, 0, 0, 0.1);
+        padding: 80px 0px 0px 10px;
+        transition: 0.3s;
+    }
+
+    #navbar.active {
+        right: 0px;
+    }
+
+    #navbar li {
+        padding: 10px;
+    }
+
+    #mobile {
+        display: flex;
+    }
+
+    #mobile i {
+        font-size: 24px;
+    }
+
+
+    #close {
+        display: initial;
+        color: black;
+        position: absolute;
+        top: 40px;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    #main {
+        height: 210px;
+    }
+
+    #contact {
+        margin-top: 15px;
+    }
+
+    #contact h3 {
+        margin: 8px;
+        font-size: 20px;
+    }
+
+    #contact p {
+        font-size: 17px;
+        margin: 7px;
+    }
+}
+@media (max-width:477px) {
+    #main {
+        height: 100px;
+    }
+
+    #contact {
+        margin-top: 10px;
+    }
+
+    #contact h3 {
+        margin: 8px;
+        font-size: 15px;
+    }
+
+    #contact p {
+        font-size: 13px;
+        margin:0;
+    }
+
+    .member h2 {
+        font-size: 20px;
+    }
+    .desc h3{
+     font-size: 20px;
+    }
+
+    .desc h5 {
+        margin-top: 0px;
+        font-size: 15px;
+    }
+
+   .form-class{
+    font-size: 20px;
+   }
+
+   .right{
+    font-size: 18px;
+   }
+
+   .follow h4{
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 0;
+   }
+
+   .icons i{
+    margin-top: 0;
+    font-size: 25px;
+   }
+
+   footer p {
+    margin: 10px;
+}
+
+    
+    
+}
